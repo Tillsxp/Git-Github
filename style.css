@@ -3,37 +3,31 @@ body {
 }
 
 .menu {
+    list-style-type: none;
     display: flex;
     flex-direction: column;
-    background-color: grey;
+    background-color: lightyellow;
     width: 200px;
-    
+    position: fixed;
+    overflow: auto;
 }
 
-.item {
+.item a{
     display: flex;
     align-items: center;
-    margin-top: 10px;
     height: 30px;
-    background-color: green;
     font-family: sans-serif;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
 }
 
-.item :hover {
-    background-color: lightgreen;
-    width: 200px;
-    height: 30px;
+.item a:hover {
+    background-color: lightblue;
+
 }
 
-#container {
-    width: 500px;
-    height: 500px;
-    position: relative;
-}
-
-#example {
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    background-color: red;
+.item a.active {
+    color:white;
+    background-color: skyblue;
 }
