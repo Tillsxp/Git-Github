@@ -8,33 +8,87 @@
     <title>Git_Github</title>
 </head>
 <body>
-    <div class="menu">
+    <div class="sidenav">
         <div class="item">
-            <a href="#repo">Repository</a>
+            <a href="#github-flow">Github Flow</a>
+            <div class="item">
+                <a href="">Branch</a></div>
+            <div class="item">
+                <a href="">Add & Commit</a></div>
+            <div class="item">
+                <a href="">Pull Request</a></div>
+            <div class="item">
+                <a href="">Deploy & Merge</a></div>
         </div>
         <div class = "item">
-            <a href="#fork">Fork</a>
-        </div class = "item">
-        <div class = "item">
-            <a href="#clone">Clone</a>
+            <a href="#flexBox">Flexbox</a>
         </div>
         <div class = "item">
-            <a href="#branch">Branch</a>
+            <a href="#DOM">DOM</a>
         </div>
         <div class = "item">
-            <a href="#commit">Commit</a>
+            <a href="#fin-kod">Fin kod</a>
         </div>
         <div class = "item">
-            <a href="#push">Push</a>
-        </div>
-        <div class = "item">
-            <a href="#pull">Pull Request</a>
+            <a href="#ramVerk">Ramverk</a>
         </div>
     </div>
-    <button onclick="tryMe()">Preview</button>
-    <div id="container">
-        <div id = "example"></div>
+    <div class="main">
+        <section>
+        <h2 id="github-flow">Github Flow</h2>
+        <p>Github Flow är en hjälpmedel när man jobbar i grupper, dela sin koder/filer eller lagra annat viktigt.
+        Det kräver ett Github konto och programmet Git.</p>
+        <h4 id="branch">Branch</h4>
+        <p>Brancher är något som används för att hålla koll på vad olika ändringar är.
+        Det kommer alltid finnas en branch som heter master eller main, detta är huvudbranchen.
+        Det är master/main branchen som alla filer mergas i för slutförning.
+        En effektiv metod att använda vid grupp projekt för att skildra på varandra koder.</p>
+        <h4 id="addCommit">Add & Commit</h4>
+        <p>För varje små ändringar, tillexempel bugg eller bortagning av fil, är det viktigt att "add" & "commit".
+        Detta är för att hålla koll på ändringarna som sker i de olika brancher, se även till att vara detaljerad i commit meddelanden.</p>
+        <h4 id="pullRequest">Pull Request</h4>
+        <p>Pull request är delen av Github när man frågar ägaren av repot att kombinera sin branch med mainen.
+        Det är en rescention för att se till att det är inget fel med koden och det är som andra delar av gruppen har tänkt.
+        </p>
+        <h4 id="deployMerge">Deploy & Merge</h4>
+        <p>De två sista stegen är deploy och att merga branchen.
+        Deploy är ett sista test för att se att koden i branchen fungerar såsom den ska och kan mergas med main branchen.
+        Efter att branchen har klarat deploy testet kan användaren merga branchen ihop med main branchen och senare ta bort den tidigare.</p>
+        <h2 id="flexbox">Flexbox</h2>
+        <p>Flexbox underlättar för programmeraren att göra responsiv.
+        Att hemsidan är responsiv betyder att den anpassar sig efter användarens fönster format.
+        Detta gör att programmering slipper använda mera komplicerade metoder som "float" eller "position".
+        Flexbox funkar perfekt med användning av @media quieres, vilket används i syftet av anpassning till olika platformar.
+        Man kan alltså använd flexbox och media quieres till att göra sin hemsida anpassningsbar till t.ex. mobil platformar. </p>
+        <h2 id="DOM">Document Object Model</h2>
+        <p>Doucment Object Model är en model som representerar,i detta fall HTML elementen som kan manipuleras med hjälp av program.
+        Model består av ett träd fyllda med objekt och hur de är kopplade till varandra. Tillexempel är elementet body förälder till a och h1 elementet.
+        Javascript får hjälp av DOM att lägga till/ändra och ta bort elementen som finns i det här trädet. </p>
+        <h2 id="fin-kod">Fin kod</h2>
+        <p>Att skriva en fin kod har som mål för att andra programmera kan göra den lätt att förstå.
+         Detta täcker ett brett område ifrån hur variblar och funktioner skrivs till placering av mellanrum.
+        Anledning till att regler vid namngivning av t.ex. funktioner och variablar är för andra att förstå vad de gör.
+        Vid användning av funktioner och variablar använder vi oss av camelCase tillexempel. 
+        <h2 id="ramVerk">Ramverk</h2>
+        <p>Ramverk eller kodbibliotek specifikt inom programmering är ett hjälpmedel för att underlätta för front-end utvecklare.
+        Man kan se det som ett bibliotek där deras källor (cascading style sheet funktinoner) bl.a. lånas i sin egen. 
+        Detta är en bra metod vid agila moment då gruppen har ont om tid.
+        </p>
+        </section>
+        <section>
+            <h2 style="text-align:center;">Referenslista</h2>
+            <a href="https://1c-dn.com/library/rules_of_naming_variables/">rules_of_naming_variables</a><br>
+            <a href="https://www.w3schools.com/js/js_conventions.asp">style_guide</a><br>
+            <a href="https://docs.github.com/en/get-started/quickstart/github-flow">github_flow</a><br>
+            <a href="https://www.w3schools.com/git/git_github_flow.asp?remote=github">git_github_flow</a><br>
+            Ramverks beskrivningen i Canvas. <br>
+            <a href="https://sv.wikipedia.org/wiki/Ramverk_(programmering)">Ramverk</a><br>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction">DOM</a><br>
+            <a href="https://www.w3schools.com/js/js_htmldom.asp">Javascript_HTML_DOM</a>
+        </section>
     </div>
+
+
     
     <script src="script.js"></script>
 </body>
